@@ -54,7 +54,7 @@ const callGenerateEndpoint = async () => {
             onChange={onUserChangedText}
           />
           {/* added logo image here*/}
-          <div className='logo-container'>
+          <div className="logo-container">
             <image src={rollaLogo} alt="Your logo" />
           </div>
           {/* new code i added here */}
@@ -87,7 +87,7 @@ const callGenerateEndpoint = async () => {
         <a
           href="https://buildspace.so/builds/ai-writer" target="_blank" rel="noreferrer">
           <div className="badge">
-            <Image src={rollaLogo} alt="Your logo" />
+            <Image src={rollaLogo} class="balls" alt="Your logo" />
             <p>build with buildspace</p>
           </div>
         </a>

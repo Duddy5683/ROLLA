@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import Head from 'next/head';
 import Image from 'next/image';
-import buildspaceLogo from '../assets/buildspace-logo.png';
+import rollaLogo from '../assets/rolla-logo.png';
 
 const Home = () => {
   const [userInput, setUserInput] = useState("");
@@ -34,25 +34,29 @@ const callGenerateEndpoint = async () => {
   return (
     <div className="root">
       <Head>
-        <title>R.O.C.K.Y | buildspace</title>
+        <title>ROLLA | buildspace</title>
       </Head>
       <div className="container">
         <div className="header">
           <div className="header-title">
-            <h1>A Drywall AI Assistant That Helps with all your drywall needs</h1>
+            <h1>Corolla MasterMech</h1>
           </div>
           <div className="header-subtitle">
-            <h2> AI-Powered Assistance for helping meet your drywall needs</h2>
+            <h2>Your Expert Guide to 1997 Toyota Corolla Maintenance and Repairs</h2>
           </div>
         </div>
         {/* Add this code here*/}
         <div className="prompt-container">
           <textarea
             className="prompt-box"
-            placeholder="Hello I am R.O.C.K.Y, lets Rock this shit"
+            placeholder="Hello I am Corolla MasterMech, lets fix this piece of shit"
             value={userInput}
             onChange={onUserChangedText}
           />
+          {/* added logo image here*/}
+          <div className='logo-container'>
+            <image src={rollaLogo} alt="Your logo" />
+          </div>
           {/* new code i added here */}
           <div className="prompt-buttons">
             <a
@@ -81,12 +85,9 @@ const callGenerateEndpoint = async () => {
       </div>
       <div className="badge-container grow">
         <a
-          href="https://buildspace.so/builds/ai-writer"
-          target="_blank"
-          rel="noreferrer"
-        >
+          href="https://buildspace.so/builds/ai-writer" target="_blank" rel="noreferrer">
           <div className="badge">
-            <Image src={buildspaceLogo} alt="buildspace logo" />
+            <Image src={rollaLogo} alt="Your logo" />
             <p>build with buildspace</p>
           </div>
         </a>
